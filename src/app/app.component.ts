@@ -7,4 +7,25 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'project1';
+
+  output = false;
+
+  username = '';
+
+  constructor() {
+    setTimeout(() => {
+      this.output = true;
+        }, 2000);
+  };
+
+
+  onCreateUser() {
+    this.username = 'username was created'
+  }
+
+  deleteUser() {
+    this.username = '';
+  }
+
+
 }
